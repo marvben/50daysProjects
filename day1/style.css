@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+
+}
+
+.container {
+    height: 100vh;
+    padding: 2rem 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    gap: 10px;
+    
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    background:#000;
+    opacity: 0.3;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+.box {position: relative;
+    padding: 1rem;
+    height: 400px;
+    border-radius: 15px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    text-align: left;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background: rebeccapurple;
+    box-shadow: 2px 1px 5px 3px rgba(0,0,0,0.22);
+-webkit-box-shadow: 2px 1px 5px 3px rgba(0,0,0,0.22);
+-moz-box-shadow: 2px 1px 5px 3px rgba(0,0,0,0.22);
+
+transition: all 0.3s ease-in 0.3s;
+}
+
+.box1 {
+
+    background-image: url(https://images.unsplash.com/photo-1656119651670-ec9610795a3b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+}
+
+.box2 {
+    background-image: url(https://images.unsplash.com/photo-1659984085775-d620f7257927?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80)
+}
+
+.box3 {
+    background-image: url(https://images.unsplash.com/photo-1657299170222-1c67dc056b70?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80)
+}
+
+.box4 {
+    background-image: url(https://images.unsplash.com/photo-1659982821971-c83ff2b52202?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80)
+}
+
+.box5 {
+    background-image: url(https://images.unsplash.com/photo-1659985401181-035224a860fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60)
+}
+
+.box.active{
+    flex: 3;
+    transition: all 0.3s ease-in 0.3s;
+}
+.box-text{
+    z-index: 5;
+    color:#fff;
+    opacity: 0;
+    width: 0;
+    transition: all 0.4s ease-in ;
+}
+.box-text.active{
+    width: 100%;
+    opacity: 1;
+    transition: all 0.4s ease-in ;
+}
